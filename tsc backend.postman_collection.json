@@ -1,0 +1,77 @@
+{
+  "info": {
+    "_postman_id": "946562e8-0ca0-4e7f-aac1-ae12b2bb8952",
+    "name": "tsc backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "30614523"
+  },
+  "item": [
+    {
+      "name": "products",
+      "item": [
+        {
+          "name": "get all data",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"indomie\",\n    \"price\": 400,\n    \"stock\": 8\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/product?name=indomie",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "product"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "indomie"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create data",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"indomie\",\n    \"price\": 400,\n    \"stock\": 8\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
